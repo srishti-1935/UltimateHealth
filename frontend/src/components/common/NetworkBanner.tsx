@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps, @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
  
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, useColorScheme } from 'react-native';
@@ -52,7 +52,7 @@ export function NetworkBanner() {
         )
       );
     }
-  }, [isOffline, hasBeenOffline]);
+  }, [isOffline, hasBeenOffline, translateY]);
 
   const animatedStyle = useAnimatedStyle(() => {
     return {
